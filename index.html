@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Mrinalini Patnaik | Cybersecurity Enthusiast</title>
+  <meta content="Mrinalini Patnaik - Computer Science Student and Cybersecurity Enthusiast" name="description">
+  <meta content="cybersecurity, developer, resume, portfolio" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    /* Custom CSS with cybersecurity theme */
+    :root {
+      --primary-color: #00b4d8;
+      --secondary-color: #0077b6;
+      --accent-color: #48cae4;
+      --accent-green: #4ade80;
+      --accent-red: #f43f5e;
+      --dark-color: #03045e;
+      --dark-bg: #121212;
+      --medium-bg: #1e1e1e;
+      --light-bg: #2e2e2e;
+      --text-light: #f8f9fa;
+      --text-muted: #adb5bd;
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: "Open Sans", sans-serif;
+      color: var(--text-light);
+      background-color: var(--dark-bg);
+    }
+    
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-family: "Raleway", sans-serif;
+    }
+
+    .cyber-font {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    a:hover {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 300px;
+      transition: all ease-in-out 0.5s;
+      z-index: 9997;
+      padding: 0 15px;
+      background: var(--medium-bg);
+      overflow-y: auto;
+      box-shadow: 0 0 15px rgba(0, 180, 216, 0.1);
+    }
+
+    .profile {
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .profile img {
+      margin: 15px auto;
+      display: block;
+      width: 120px;
+      border: 8px solid var(--light-bg);
+      box-shadow: 0 0 20px rgba(0, 180, 216, 0.2);
+    }
+
+    .profile h1 {
+      font-size: 24px;
+      margin: 0;
+      padding: 0;
+      font-weight: 600;
+      text-align: center;
+      color: var(--text-light);
+    }
+
+    .profile .social-links a {
+      font-size: 18px;
+      display: inline-block;
+      background: var(--light-bg);
+      color: var(--text-light);
+      line-height: 1;
+      padding: 8px 0;
+      margin-right: 4px;
+      border-radius: 50%;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      transition: 0.3s;
+    }
+
+    .profile .social-links a:hover {
+      background: var(--primary-color);
+      color: var(--text-light);
+      text-decoration: none;
+      transform: translateY(-3px);
+    }
+
+    .nav-menu {
+      padding: 30px 0 0 0;
+    }
+
+    .nav-menu * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav-menu > ul > li {
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .nav-menu a, .nav-menu a:focus {
+      display: flex;
+      align-items: center;
+      color: var(--text-muted);
+      padding: 12px 15px;
+      margin-bottom: 8px;
+      transition: 0.3s;
+      font-size: 15px;
+      border-radius: 5px;
+    }
+
+    .nav-menu a i, .nav-menu a:focus i {
+      font-size: 24px;
+      padding-right: 8px;
+      color: var(--accent-color);
+    }
+
+    .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
+      text-decoration: none;
+      color: var(--text-light);
+      background: rgba(0, 180, 216, 0.1);
+    }
+
+    .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
+      color: var(--primary-color);
+    }
+
+    .mobile-nav-toggle {
+      position: fixed;
+      right: 15px;
+      top: 15px;
+      z-index: 9998;
+      border: 0;
+      font-size: 24px;
+      transition: all 0.4s;
+      outline: none !important;
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 0;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    #main {
+      margin-left: 300px;
+    }
+
+    #hero {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)), url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80') center/cover no-repeat;
+      position: relative;
+    }
+
+    #hero:before {
+      content: "";
+      background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.6));
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    #hero .hero-container {
+      position: relative;
+      z-index: 2;
+      min-width: 300px;
+      padding: 0 15px;
+    }
+
+    #hero h1 {
+      margin: 0 0 10px 0;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 56px;
+      color: #fff;
+    }
+
+    #hero p {
+      color: #fff;
+      margin-bottom: 50px;
+      font-size: 26px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    #hero p span {
+      color: var(--primary-color);
+      letter-spacing: 1px;
+    }
+
+    .tag-box {
+      display: inline-block;
+      padding: 5px 15px;
+      margin: 5px;
+      border-radius: 20px;
+      background: rgba(0, 180, 216, 0.1);
+      border: 1px solid var(--primary-color);
+      color: var(--primary-color);
+      font-size: 14px;
+      transition: all 0.3s;
+    }
+
+    .tag-box:hover {
+      background: var(--primary-color);
+      color: var(--text-light);
+      transform: translateY(-3px);
+    }
+
+    .cta-btn {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 10px 28px;
+      border-radius: 4px;
+      transition: 0.3s;
+      color: #fff;
+      background: var(--primary-color);
+      margin-top: 20px;
+    }
+
+    .cta-btn:hover {
+      background: var(--secondary-color);
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    section {
+      padding: 60px 0;
+      overflow: hidden;
+    }
+
+    .section-bg {
+      background-color: var(--medium-bg);
+    }
+
+    .section-title {
+      padding-bottom: 30px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      position: relative;
+      color: var(--primary-color);
+    }
+
+    .section-title h2::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--primary-color);
+      bottom: 0;
+      left: 0;
+    }
+
+    .section-title p {
+      margin-bottom: 0;
+      color: var(--text-muted);
+    }
+
+    .about .content h3 {
+      font-weight: 700;
+      font-size: 26px;
+      color: var(--accent-color);
+    }
+
+    .about .content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .about .content ul li {
+      padding-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .about .content ul i {
+      font-size: 20px;
+      padding-right: 10px;
+      color: var(--primary-color);
+    }
+
+    .about .content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .featured-services .icon-box {
+      padding: 30px;
+      margin-bottom: 20px;
+      background: var(--light-bg);
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .featured-services .icon-box::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .featured-services .icon-box:hover::before {
+      transform: scaleX(1);
+    }
+
+    .featured-services .icon-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0, 180, 216, 0.2);
+    }
+
+    .featured-services .icon {
+      margin-bottom: 15px;
+    }
+
+    .featured-services .icon i {
+      font-size: 48px;
+      line-height: 1;
+      color: var(--primary-color);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .featured-services .title {
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .featured-services .title a {
+      color: var(--text-light);
+    }
+
+    .featured-services .description {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 0;
+      color: var(--text-muted);
+    }
+
+    .skill-progress {
+      margin-bottom: 25px;
+    }
+
+    .skill-progress .skill-name {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+
+    .skill-progress .progress {
+      height: 10px;
+      border-radius: 10px;
+      background-color: var(--light-bg);
+    }
+
+    .skill-progress .progress-bar {
+      background-color: var(--primary-color);
+      border-radius: 10px;
+    }
+
+    .stats-box {
+      background: var(--light-bg);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+      margin-bottom: 30px;
+    }
+
+    .stats-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0, 180, 216, 0.2);
+    }
+
+    .stats-box .icon {
+      font-size: 48px;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+
+    .stats-box h3 {
+      font-size: 24px;
+      color: var(--accent-color);
+      margin-bottom: 5px;
+    }
+
+    .stats-box p {
+      margin-bottom: 0;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .terminal-container {
+      background: var(--medium-bg);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--text-light);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .terminal-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .terminal-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+
+    .dot-red {
+      background-color: var(--accent-red);
+    }
+
+    .dot-yellow {
+      background-color: #fbbf24;
+    }
+
+    .dot-green {
+      background-color: var(--accent-green);
+    }
+
+    .terminal-title {
+      margin-left: 10px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .terminal-body {
+      font-size: 14px;
+    }
+
+    .terminal-line {
+      margin-bottom: 5px;
+      display: flex;
+    }
+
+    .terminal-prompt {
+      color: var(--accent-green);
+      margin-right: 10px;
+    }
+
+    .terminal-command {
+      color: var(--text-light);
+    }
+
+    .terminal-output {
+      color: var(--text-muted);
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .typing-animation {
+      overflow: hidden;
+      border-right: 2px solid var(--primary-color);
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: 0.15em;
+      animation: typing 3.5s steps(40, end),
+                blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: var(--primary-color) }
+    }
+
+    /* Binary background animation for cybersecurity feel */
+    .binary-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.05;
+      z-index: 1;
+      overflow: hidden;
+      background: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)), 
+                  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="0" y="10" font-family="monospace" font-size="10" fill="rgb(0,180,216)">10110101</text><text x="20" y="20" font-family="monospace" font-size="10" fill="rgb(0,180,216)">01001011</text><text x="40" y="30" font-family="monospace" font-size="10" fill="rgb(0,180,216)">11001010</text><text x="60" y="40" font-family="monospace" font-size="10" fill="rgb(0,180,216)">00101101</text><text x="80" y="50" font-family="monospace" font-size="10" fill="rgb(0,180,216)">10010110</text><text x="0" y="60" font-family="monospace" font-size="10" fill="rgb(0,180,216)">01101001</text><text x="20" y="70" font-family="monospace" font-size="10" fill="rgb(0,180,216)">10010101</text><text x="40" y="80" font-family="monospace" font-size="10" fill="rgb(0,180,216)">01101001</text><text x="60" y="90" font-family="monospace" font-size="10" fill="rgb(0,180,216)">10110101</text><text x="80" y="100" font-family="monospace" font-size="10" fill="rgb(0,180,216)">01001011</text></svg>');
+    }
+
+    /* Matrix rain effect */
+    #canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      opacity: 0.1;
+    }
+
+    /* Cybersecurity-themed animations */
+    @keyframes glitch {
+      0% {
+        text-shadow: 0.05em 0 0 rgba(0, 180, 216, 0.75),
+                    -0.05em -0.025em 0 rgba(72, 202, 228, 0.75),
+                    0.025em 0.05em 0 rgba(0, 119, 182, 0.75);
+      }
+      14% {
+        text-shadow: 0.05em 0 0 rgba(0, 180, 216, 0.75),
+                    -0.05em -0.025em 0 rgba(72, 202, 228, 0.75),
+                    0.025em 0.05em 0 rgba(0, 119, 182, 0.75);
+      }
+      15% {
+        text-shadow: -0.05em -0.025em 0 rgba(0, 180, 216, 0.75),
+                    0.025em 0.025em 0 rgba(72, 202, 228, 0.75),
+                    -0.05em -0.05em 0 rgba(0, 119, 182, 0.75);
+      }
+      49% {
+        text-shadow: -0.05em -0.025em 0 rgba(0, 180, 216, 0.75),
+                    0.025em 0.025em 0 rgba(72, 202, 228, 0.75),
+                    -0.05em -0.05em 0 rgba(0, 119, 182, 0.75);
+      }
+      50% {
+        text-shadow: 0.025em 0.05em 0 rgba(0, 180, 216, 0.75),
+                    0.05em 0 0 rgba(72, 202, 228, 0.75),
+                    0 -0.05em 0 rgba(0, 119, 182, 0.75);
+      }
+      99% {
+        text-shadow: 0.025em 0.05em 0 rgba(0, 180, 216, 0.75),
+                    0.05em 0 0 rgba(72, 202, 228, 0.75),
+                    0 -0.05em 0 rgba(0, 119, 182, 0.75);
+      }
+      100% {
+        text-shadow: -0.025em 0 0 rgba(0, 180, 216, 0.75),
+                    -0.025em -0.025em 0 rgba(72, 202, 228, 0.75),
+                    -0.025em -0.05em 0 rgba(0, 119, 182, 0.75);
+      }
+    }
+
+.gradient-text {
+  background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 3s infinite linear;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+    .pulse-animation {
+      animation: pulse 2s infinite;
+    }
+
+    .back-to-top {
+      position: fixed;
+      visibility: hidden;
+      opacity: 0;
+      right: 15px;
+      bottom: 15px;
+      z-index: 996;
+      background: var(--primary-color);
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      transition: all 0.4s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .back-to-top i {
+      font-size: 28px;
+      color: var(--text-light);
+      line-height: 0;
+    }
+
+    .back-to-top:hover {
+      background: var(--secondary-color);
+      color: var(--text-light);
+      transform: scale(1.1);
+    }
+
+    .back-to-top.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    footer {
+      padding: 30px 0;
+      background-color: var(--medium-bg);
+      color: var(--text-light);
+      text-align: center;
+    }
+
+    /* Responsive Media Queries */
+    @media (max-width: 1199px) {
+      .section-title h2 {
+        font-size: 28px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      #header {
+        width: 300px;
+        left: -300px;
+      }
+      #main {
+        margin-left: 0;
+      }
+      .mobile-nav-active #header {
+        left: 0;
+      }
+      .section-title h2 {
+        font-size: 26px;
+      }
+      #hero h1 {
+        font-size: 50px;
+      }
+      #hero p {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section-title h2 {
+        font-size: 24px;
+      }
+      #hero h1 {
+        font-size: 40px;
+      }
+      #hero p {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .section-title h2 {
+        font-size: 22px;
+      }
+      #hero h1 {
+        font-size: 32px;
+      }
+      #hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Canvas for Matrix rain effect -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Mobile nav toggle button -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="profile">
+      <img src="https://media.licdn.com/dms/image/v2/D4D03AQFeQaVE2xeeiw/profile-displayphoto-shrink_400_400/B4DZbYCPdTGYAg-/0/1747381189392?e=1760572800&v=beta&t=rgDcwVxnoXlAn1yqhcuMEypxzt1NogFL124JOpH4-Ro" alt="Mrinalini Patnaik">
+      <h1>Mrinalini Patnaik</h1>
+      <div class="social-links mt-3">
+        <a href="https://github.com/mrinalini101" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/mrinalini-patnaik-588428358/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bi bi-house"></i> Home</a></li>
+          <li><a href="resume.html" class="nav-link scrollto"><i class="bi bi-person"></i> Resume</a></li>
+          <li><a href="portfolio.html" class="nav-link scrollto"><i class="bi bi-tools"></i> Portfolio</a></li>
+          <li><a href="blog.html" class="nav-link scrollto"><i class="bi bi-code-square"></i> Blog</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="binary-bg"></div>
+    <div class="hero-container" data-aos="fade-in">
+      <h1 class="gradient-text">Mrinalini Patnaik</h1>
+      <p>I'm a <span id="typed-text"></span></p>
+      
+      <div class="d-flex flex-wrap justify-content-center">
+        <span class="tag-box"><i class="bi bi-code-slash"></i> Java</span>
+        <span class="tag-box"><i class="bi bi-database"></i> SQL</span>
+        <span class="tag-box"><i class="bi bi-code"></i> Python</span>
+        <span class="tag-box"><i class="bi bi-shield-lock"></i> Cybersecurity</span>
+        <span class="tag-box"><i class="bi bi-server"></i> Linux</span>
+      </div>
+      
+      <div class="mt-4">
+        <a href="resume.html" class="cta-btn">View Resume <i class="bi bi-arrow-right"></i></a>
+        <a href="portfolio.html" class="cta-btn" style="background: var(--light-bg);">See Projects <i class="bi bi-folder"></i></a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About Me</h2>
+          <p>Computer Science student passionate about cybersecurity and software development</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="terminal-container">
+              <div class="terminal-header">
+                <div class="terminal-dot dot-red"></div>
+                <div class="terminal-dot dot-yellow"></div>
+                <div class="terminal-dot dot-green"></div>
+                <div class="terminal-title">mrinalini@system:~</div>
+              </div>
+              <div class="terminal-body">
+                <div class="terminal-line">
+                  <span class="terminal-prompt">$</span>
+                  <span class="terminal-command">whoami</span>
+                </div>
+                <div class="terminal-output">
+                  Mrinalini Patnaik
+                </div>
+                <div class="terminal-line">
+                  <span class="terminal-prompt">$</span>
+                  <span class="terminal-command">cat education.txt</span>
+                </div>
+                <div class="terminal-output">
+                  B-Tech in Computer Science<br>
+                  C.V Raman Global University<br>
+                  2022-2026
+                </div>
+                <div class="terminal-line">
+                  <span class="terminal-prompt">$</span>
+                  <span class="terminal-command">ls -l certifications/</span>
+                </div>
+                <div class="terminal-output">
+                  SecOps-CNSP<br>
+                  AWS-CCSP<br>
+                  CRTA<br>
+                  eJPT<br>
+                  CCNA
+                </div>
+                <div class="terminal-line">
+                  <span class="terminal-prompt">$</span>
+                  <span class="terminal-command">./start_journey.sh</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Computer Science Student & Cybersecurity Enthusiast</h3>
+            <p class="fst-italic">
+              Passionate about exploring the world of technology and dedicated to building secure, efficient solutions.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech in Computer Science</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>University:</strong> <span>C.V Raman Global University</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="mailto:mrinalinipatnaik2017@gmail.com">mrinalinipatnaik2017@gmail.com</a></span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Graduation:</strong> <span>July 2026</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 9999999999</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bhubaneswar, Odisha</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              I am a dedicated Computer Science student with a strong passion for cybersecurity. My academic journey has equipped me with a solid foundation in programming, database management, and network security. I continuously explore new technologies and methodologies to enhance my skills and stay updated in the rapidly evolving tech landscape.
+            </p>
+            <p>
+              With experience in developing web applications and implementing security measures, I am committed to creating robust and secure solutions. My recent internship at Hindustan Aeronautics Limited allowed me to apply my knowledge in a real-world setting, developing a full-stack inventory management system that enhanced operational efficiency.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>My technical proficiency across various domains</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="mb-4 cyber-font">Programming & Development</h3>
+            
+            <div class="skill-progress">
+              <div class="skill-name">
+                <h6>Java</h6>
+                <h6>85%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress">
+              <div class="skill-name">
+                <h6>SQL</h6>
+                <h6>80%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress">
+              <div class="skill-name">
+                <h6>Python</h6>
+                <h6>75%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress">
+              <div class="skill-name">
+                <h6>Flask</h6>
+                <h6>70%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress">
+              <div class="skill-name">
+                <h6>HTML/CSS/Bootstrap</h6>
+                <h6>65%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="mb-4 cyber-font">Cybersecurity & Systems</h3>
+            
+            <div class="skill-progress">
+              <div class="skill-name">
+                <h6>Network Security</h6>
+                <h6>80%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress">
+              <div class="skill-name">
+                <h6>Linux</h6>
+                <h6>75%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress">
+              <div class="skill-name">
+                <h6>Docker</h6>
+                <h6>65%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress">
+              <div class="skill-name">
+                <h6>Burp Suite</h6>
+                <h6>70%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress">
+              <div class="skill-name">
+                <h6>Database Management</h6>
+                <h6>85%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in">
+            <div class="stats-box text-center">
+              <div class="icon">
+                <i class="bi bi-award"></i>
+              </div>
+              <h3>5+</h3>
+              <p>Certifications</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="stats-box text-center">
+              <div class="icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h3>3+</h3>
+              <p>Major Projects</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="stats-box text-center">
+              <div class="icon">
+                <i class="bi bi-trophy"></i>
+              </div>
+              <h3>Top 3</h3>
+              <p>Flipkart ISCP CTF</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="stats-box text-center">
+              <div class="icon">
+                <i class="bi bi-lightning"></i>
+              </div>
+              <h3>1+</h3>
+              <p>Years Experience</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Featured Projects Section ======= -->
+    <section id="projects" class="featured-services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>Showcasing my technical capabilities through practical applications</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-palette"></i></div>
+              <h4 class="title"><a href="">Art Gallery Management System</a></h4>
+              <p class="description">A comprehensive system for managing art gallery operations including artwork cataloging, artist profiles, and exhibition scheduling. Built with Python, MySQL, and HTML/CSS.</p>
+              <div class="mt-3">
+                <span class="tag-box">Python</span>
+                <span class="tag-box">MySQL</span>
+                <span class="tag-box">HTML/CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-activity"></i></div>
+              <h4 class="title"><a href="">Skin Cancer Detection System</a></h4>
+              <p class="description">A machine learning-based system for detecting and classifying skin cancer through image analysis. Utilizes deep learning models for accurate diagnosis and deployed with Flask.</p>
+              <div class="mt-3">
+                <span class="tag-box">Python</span>
+                <span class="tag-box">TensorFlow</span>
+                <span class="tag-box">OpenCV</span>
+                <span class="tag-box">Flask</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-boxes"></i></div>
+              <h4 class="title"><a href="">Smart Inventory Management System</a></h4>
+              <p class="description">A Flask-based inventory management system featuring role-based access control, supplier management, and purchase order workflows. Deployed at Hindustan Aeronautics Ltd.</p>
+              <div class="mt-3">
+                <span class="tag-box">Flask</span>
+                <span class="tag-box">MySQL</span>
+                <span class="tag-box">Bootstrap</span>
+                <span class="tag-box">SQLAlchemy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Featured Projects Section -->
+
+    <!-- ======= Achievements Section ======= -->
+    <section id="achievements" class="about section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Achievements</h2>
+          <p>Recognition for excellence in cybersecurity competitions and innovation</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6" data-aos="fade-right">
+            <div class="terminal-container">
+              <div class="terminal-header">
+                <div class="terminal-dot dot-red"></div>
+                <div class="terminal-dot dot-yellow"></div>
+                <div class="terminal-dot dot-green"></div>
+                <div class="terminal-title">achievements@mrinalini:~</div>
+              </div>
+              <div class="terminal-body">
+                <div class="terminal-line">
+                  <span class="terminal-prompt">$</span>
+                  <span class="terminal-command">cat major_achievements.txt</span>
+                </div>
+                <div class="terminal-output">
+                  • All India Rank 3rd - Flipkart ISCP CTF Challenge<br>
+                  • Top 100 - Pentathon Cybersecurity Contest<br>
+                  • Lead Presenter - Ideathon (2023-2026)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8" data-aos="fade-left">
+            <div class="row">
+              <div class="col-md-12 mb-4">
+                <div class="achievement-card">
+                  <h4 class="achievement-title"><i class="bi bi-trophy-fill text-warning me-2"></i> Flipkart ISCP CTF Challenge</h4>
+                  <span class="achievement-date">April 2025</span>
+                  <ul>
+                    <li>Secured All India Rank 3rd in Flipkart's ISCP CTF Challenge, a national-level cybersecurity competition</li>
+                    <li>Successfully solved complex challenges in cryptography, web security, reverse engineering, and forensics</li>
+                    <li>Demonstrated advanced problem-solving skills and technical knowledge under competitive time constraints</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="col-md-12 mb-4">
+                <div class="achievement-card">
+                  <h4 class="achievement-title"><i class="bi bi-shield-check text-primary me-2"></i> Pentathon Cybersecurity Contest</h4>
+                  <span class="achievement-date">April 2025</span>
+                  <ul>
+                    <li>Ranked among the Top 100 participants in the national-level Pentathon Cybersecurity Contest</li>
+                    <li>Participated in a rigorous competition testing knowledge of network security, vulnerability assessment, and ethical hacking</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="col-md-12">
+                <div class="achievement-card">
+                  <h4 class="achievement-title"><i class="bi bi-lightbulb text-info me-2"></i> Ideathon</h4>
+                  <span class="achievement-date">May 2023 - May 2026</span>
+                  <ul>
+                    <li>Served as Lead Presenter in multiple innovation-driven events in Bhubaneswar</li>
+                    <li>Collaborated with diverse teams to ideate, design, and pitch creative solutions to real-world problems</li>
+                    <li>Received accolades for exceptional presentation skills and innovative ideas</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Achievements Section -->
+
+    <!-- ======= Call to Action Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3 class="gradient-text mb-4">Ready to Connect?</h3>
+            <p>I'm always open to discussing new projects, opportunities, and ideas. Feel free to reach out if you'd like to collaborate or just have a chat about technology and cybersecurity!</p>
+            <div class="mt-4">
+              <a href="mailto:mrinalinipatnaik2017@gmail.com" class="cta-btn">Contact Me <i class="bi bi-envelope"></i></a>
+              <a href="resume.html" class="cta-btn" style="background: var(--light-bg);">View Full Resume <i class="bi bi-file-earmark-text"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Call to Action Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="credits">
+        <p>
+          &copy; 2025 Mrinalini Patnaik<br>
+          Computer Science Student & Cybersecurity Enthusiast
+        </p>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- Typed.js for typing animation -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
+    });
+
+    // Mobile nav toggle
+    document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+      document.querySelector('body').classList.toggle('mobile-nav-active');
+      this.classList.toggle('bi-list');
+      this.classList.toggle('bi-x');
+    });
+
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        navLinks.forEach(item => item.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // Back to top button
+    const backToTop = document.querySelector('.back-to-top');
+    if (backToTop) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+          backToTop.classList.add('active');
+        } else {
+          backToTop.classList.remove('active');
+        }
+      });
+    }
+
+    // Smooth scrolling for navigation
+    document.querySelectorAll('.nav-menu a, .cta-btn').forEach(link => {
+      if (link.hash) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          let section = document.querySelector(this.hash);
+          if (section) {
+            window.scrollTo({
+              top: section.offsetTop - 20,
+              behavior: 'smooth'
+            });
+          }
+        });
+      }
+    });
+
+    // Typing animation
+    let typed = new Typed('#typed-text', {
+      strings: ['Computer Science Student', 'Cybersecurity Enthusiast', 'Software Developer'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 2000,
+      loop: true
+    });
+
+    // Matrix rain effect
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789ｦｧｨｩｪｫｬｭｮｯｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ';
+    
+    const fontSize = 16;
+    const columns = canvas.width / fontSize;
+    
+    const drops = [];
+    for (let x = 0; x < columns; x++) {
+      drops[x] = 1;
+    }
+    
+    function draw() {
+      ctx.fillStyle = 'rgba(18, 18, 18, 0.05)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      
+      ctx.fillStyle = '#0077b6';
+      ctx.font = `${fontSize}px monospace`;
+      
+      for (let i = 0; i < drops.length; i++) {
+        const text = characters.charAt(Math.floor(Math.random() * characters.length));
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+        
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+          drops[i] = 0;
+        }
+        
+        drops[i]++;
+      }
+    }
+    
+    setInterval(draw, 33);
+    
+    // Update canvas dimensions on window resize
+    window.addEventListener('resize', function() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+  </script>
+</body>
+
+</html>
